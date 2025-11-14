@@ -7,7 +7,9 @@ document.addEventListener(
   "DOMContentLoaded",
   () => {
     // new Sketch("canvas");
-    const sketch = new Sketch('canvas');
+    new Sketch({
+      dom: document.querySelector("#canvas"),
+    });
     window.addEventListener("load", () => {
       //
     });
